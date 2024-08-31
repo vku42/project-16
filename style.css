@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(214, 214, 214);
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+nav h4 {
+  font-size: 20px;
+}
+
+nav i {
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 100;
+  border-radius: 50%;
+}
+
+.center {
+  width: 100%;
+  padding: 40px 80px;
+  background-color: rgb(214, 214, 214);
+}
+
+.center h1 {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 85px;
+}
+
+#center-in {
+  /* height: 200px; */
+  /* background-color: red; */
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#center-in p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+#right {
+  width: 20%;
+}
+
+.elem {
+  padding: 20px 0;
+  border-top: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: yellow; */
+}
+
+.elem i {
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 0;
+}
+
+.center a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.elem:hover i {
+  opacity: 1;
+}
+
+.elem:hover a{
+    text-decoration: underline;
+}
+.elem:hover {
+    background-color: #cdcdcd;
+}
+
+#bottom {
+    height: 40%;
+    width: 100%;
+    background: url(photo.jpg);
+    background-size: cover;
+    background-position: 0 25%;
+    background-color: red;
+}
+
+@media screen and (max-width: 1032px) {
+    .elem a{
+        font-size: 15px;
+    }
+
+    .elem {
+        padding: 10px 0;
+    }
+
+    .center h1 {
+        font-size: 60px;
+        font-weight: 300;
+        line-height: 65px;
+      }
+
+      #center-in p { 
+        font-size: 15px;
+      }
+}
+
+@media screen and (max-width: 600px) {
+    #center-in {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    #right {
+        margin-top: 25px;
+        width: 80%;
+      }
+
+      .center {
+        padding: 10px 30px;
+
+      }
+    
+}
